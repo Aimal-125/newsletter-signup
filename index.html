@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Frontend Mentor Newsletter sign-up form solution, HTML5, CSS, Responsive Web Design">
+  <meta name="description" content="Frontend Mentor Newsletter sign-up form solution">
+  <meta name="author" content="Aimal Khan">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <script src="ex.js" defer></script>
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title> 
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="miniContainer">
+        <div class="div1">
+          <h1 class="hd">Stay updated!</h1>
+          <p class="text">Join 60,000+ product managers receiving monthly updates on:</p>
+          <div class="icon-div">
+            <div class="iconimg-div">
+              <span class="icon-span">
+                <img src="assets/images/icon-list.svg" alt="icon">
+                <p class="icon-para">Product discovery and building what matters</p>
+              </span>
+              <span class="icon-span">
+                <img src="assets/images/icon-list.svg" alt="icon">
+                <p class="icon-para">Measuring to ensure updates are a success</p>
+              </span>
+              <span class="icon-span">
+                <img src="assets/images/icon-list.svg" alt="icon">
+                <p class="icon-para">And much more!</p>
+              </span>
+            </div>
+          </div>
+          <form name="form1" id="myform" action="thanx.html" method="get">
+            <div id="emaildiv">
+              <label for="email">Email address<span id="error"></span></label>
+              <input type="text" name="email" id="email" placeholder="email@company.com">
+            </div>
+            <button type="submit" id="btn">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+        <div class="div2">
+          <div class="desktop-div">
+            <img src="assets/images/illustration-sign-up-desktop.svg" alt="sign up illustration" id="desktop-img">
+          </div>
+          <div class="mobile-div">
+            <img src="assets/images/illustration-sign-up-mobile.svg" alt="sign up illustration" id="mobile-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

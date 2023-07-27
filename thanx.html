@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Frontend Mentor Newsletter sign-up form solution, HTML5, CSS, Responsive Web Design">
+	<meta name="description" content="Frontend Mentor Newsletter sign-up form solution">
+	<meta name="author" content="Aimal Khan">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<script src="ex.js" defer></script>
+	<title>Frontend Mentor | Newsletter sign-up form with success message</title> 
+</head>
+<body>
+	<main>
+		<div class="container">
+			<div class="thanx">
+				<div class="thanx-imgdiv">
+					<img src="assets/images/icon-success.svg" alt="success icon">
+				</div>
+				<h1 class="thanxhd">
+					Thanks for subscribing!
+				</h1>
+				<p class="thanxpara">
+					A confirmation email has been sent to <span id="evalue"></span> Please open it and click the button inside to confirm your subscription.
+				</p>
+				<a href="index.html"><button type="button" id="thanxbtn">Dismiss message</button></a>
+			</div>
+		</div>
+	</main>
+</body>
+<script>
+	let span = document.querySelector("#evalue");
+	let urlParams = new URLSearchParams(window.location.search);
+	let emailValue = urlParams.get("email");
+	span.innerHTML = emailValue + ".";
+</script>
+</html>

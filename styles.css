@@ -1,0 +1,267 @@
+@font-face {
+	font-family: "Roboto";
+	src: url(assets/fonts/Roboto-Bold.ttf);
+	src: url(assets/fonts/Roboto-Regular.ttf);
+}
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	background: hsl(235, 18%, 26%);
+	font-family: "Roboto", sans-serif;
+	position: relative;
+}
+.container {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	padding: 1rem;
+}
+.miniContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vh;
+	height: 80vh;
+	background: white;
+	border-radius: 5vh;
+	padding: 2vh;
+}
+.div1 {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 3vh;
+	gap: 3vh;
+}
+.hd {
+	text-align: left;
+	font-size: 6vh;
+}
+.text {
+	font-size: 2vh;
+}
+.iconimg-div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5vh;
+}
+.icon-span {
+	display: flex;
+	align-items: center;
+	gap: 1.5vh;
+}
+.icon-span img {
+	display: block;
+	width: 2vw;
+}
+.icon-para {
+	font-size: 2vh;
+}
+#emaildiv {
+	display: flex;
+	flex-direction: column;
+	gap: 2vh;
+}
+#emaildiv label {
+	font-size: 1.7vh;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#emaildiv label span {
+	color: red;
+}
+#email {
+	padding: 2vh;
+	border-radius: 1vh;
+	font-size: 2vh;
+	border: 0.1vh solid hsl(231, 7%, 70%);
+}
+#email:focus {
+	border: 0.1vh solid black;
+	outline: none;
+}
+#btn {
+	border: none;
+	border-radius: 1vh;
+	width: 100%;
+	padding: 2vh;
+	font-size: 2vh;
+	margin-top: 4vh;
+	background: hsl(234, 29%, 20%);
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+#btn:hover {
+	background: linear-gradient(90deg, hsl(348, 99%, 66%), hsl(348, 99%, 66%), hsl(4, 100%, 67%), hsl(4, 100%, 67%));
+	box-shadow: 0vh 1vh 1vh 1vh hsl(348, 99%, 90%);
+}
+.div2 {
+	width: 50%;
+	height: 100%;
+	padding: 1vh;
+}
+.desktop-div {
+	width: 100%;
+	height: 100%;
+}
+#desktop-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 3vh;
+	object-fit: cover;
+}
+.mobile-div {
+	display: none;
+}
+
+/* thanx.html styles start */
+
+.thanx {
+	background: white;
+	width: 60vh;
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border-radius: 5vh;
+	padding: 5vh;
+	gap: 1vh;
+}
+.thanxhd {
+	font-size: 5vh;
+}
+#thanxbtn {
+	width: 100%;
+	padding: 3vh;
+	border-radius: 1vh;
+	border: none;
+	font-weight: bold;
+	background: hsl(234, 29%, 20%);
+	color: white;
+	font-size: 2vh;
+	cursor: pointer;
+}
+#thanxbtn:hover {
+	background: linear-gradient(90deg, hsl(348, 99%, 66%), hsl(348, 99%, 66%), hsl(4, 100%, 67%), hsl(4, 100%, 67%));
+	box-shadow: 0vh 1vh 1vh 1vh hsl(348, 99%, 90%);
+}
+.thanxpara {
+	color: hsl(235, 18%, 26%);
+	font-size: 2vh;
+}
+.thanxpara span {
+	font-weight: bold;
+	color: black;
+}
+.thanx-imgdiv {
+	width: 10vh;
+}
+.thanx-imgdiv img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/*   thanx.html styles end */
+
+@media screen and (orientation: portrait) {
+	body {
+		background: white;
+	}
+	.container {
+		padding: 0;
+		align-items: flex-start;
+	}
+	.miniContainer {
+		width: 100%;
+		height: initial;
+		border-radius: 0;
+		flex-direction: column-reverse;
+		padding: 0;
+		justify-content: initial;
+		align-items: initial;
+	}
+	.div1, .div2 {
+		width: 100%;
+	}
+	.div1 {
+		justify-content: flex-start;
+		padding: 4vh;
+	}
+	.hd {
+		font-size: 5vh;
+		text-align: left;
+		margin-top: 3vh;
+	}
+	.icon-span {
+		align-items: flex-start;
+	}
+	.icon-span img {
+		width: 3vh;
+		height: 3vh;
+	}
+	.div2 {
+		padding: 0;
+		width: 100%;
+	}
+	.mobile-div {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.desktop-div {
+		display: none;
+	}
+	#mobile-img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	/* thanx.html styles */
+	.thanx {
+		width: 100%;
+		border-radius: 0;
+		min-height: 100vh;
+		justify-content: flex-start;
+		align-items: flex-start;
+		padding: 5vh;
+		gap: 3vh;
+	}
+	.thanx-imgdiv {
+		margin-top: 10vh;
+		width: 20vw;
+	}
+	.thanxhd {
+		font-size: 5vh;
+	}
+	.thanxpara {
+		font-size: 3vh;
+	}
+	.thanx-imgdiv img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	#thanxbtn {
+		width: 85%;
+		left: 50%;
+		position: absolute;
+		bottom: 5%;
+		transform: translate(-50%);
+		font-size: 3vh;
+	}
+}
