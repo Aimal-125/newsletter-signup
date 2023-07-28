@@ -56,15 +56,16 @@ body {
 }
 .icon-span {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	gap: 1.5vh;
 }
 .icon-span img {
 	display: block;
-	width: 2vw;
+	width: 3vh;
 }
 .icon-para {
 	font-size: 2vh;
+	align-self: center;
 }
 #emaildiv {
 	display: flex;
@@ -145,7 +146,7 @@ body {
 }
 #thanxbtn {
 	width: 100%;
-	padding: 3vh;
+	padding: 2vh;
 	border-radius: 1vh;
 	border: none;
 	font-weight: bold;
@@ -160,7 +161,7 @@ body {
 }
 .thanxpara {
 	color: hsl(235, 18%, 26%);
-	font-size: 2vh;
+	font-size: 2.5vh;
 }
 .thanxpara span {
 	font-weight: bold;
@@ -243,7 +244,7 @@ body {
 	}
 	.thanx-imgdiv {
 		margin-top: 10vh;
-		width: 20vw;
+		width: 10vh;
 	}
 	.thanxhd {
 		font-size: 5vh;
@@ -264,4 +265,94 @@ body {
 		transform: translate(-50%);
 		font-size: 3vh;
 	}
+}
+
+@media screen and (max-height: 600px) {
+	body {
+		background: white;
+	}
+	.container {
+		padding: 0;
+		align-items: flex-start;
+	}
+	.miniContainer {
+		width: 100%;
+		height: initial;
+		border-radius: 0;
+		flex-direction: column-reverse;
+		padding: 0;
+		justify-content: initial;
+		align-items: initial;
+	}
+	.div1, .div2 {
+		width: 100%;
+	}
+	.div1 {
+		justify-content: flex-start;
+		padding: 4vh;
+	}
+	.hd {
+		font-size: 5vh;
+		text-align: left;
+		margin-top: 3vh;
+	}
+	.icon-span {
+		align-items: flex-start;
+	}
+	.icon-span img {
+		width: 3vh;
+		height: 3vh;
+	}
+	.div2 {
+		padding: 0;
+		width: 100%;
+	}
+	.mobile-div {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.desktop-div {
+		display: none;
+	}
+	#mobile-img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	/* thanx.html styles */
+	.thanx {
+		width: 100%;
+		border-radius: 0;
+		min-height: 100vh;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 5vh;
+		gap: 3vh;
+	}
+	.thanx-imgdiv {
+		margin-top: 10vh;
+		width: 15vh;
+	}
+	.thanxhd {
+		font-size: 5vh;
+	}
+	.thanxpara {
+		font-size: 3vh;
+		text-align: center;
+	}
+	.thanx-imgdiv img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	#thanxbtn {
+		width: 50%;
+		left: 50%;
+		position: absolute;
+		bottom: 5%;
+		transform: translate(-50%);
+		font-size: 3vh;
+	}	
 }
