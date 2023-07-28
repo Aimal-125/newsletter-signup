@@ -218,7 +218,6 @@ body {
 	.div2 {
 		padding: 0;
 		width: 100%;
-		height: 40vh;
 	}
 	.mobile-div {
 		display: block;
@@ -271,7 +270,7 @@ body {
 	}
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 400px) {
 	body {
 		background: white;
 	}
@@ -441,7 +440,6 @@ body {
 		border-bottom-left-radius: 5vh;
 	}
 
-	/* thanx.html styles */
 	.thanx {
 		width: 100%;
 		border-radius: 0;
@@ -474,4 +472,39 @@ body {
 		transform: translate(-50%);
 		font-size: 3vh;
 	}	
+}
+
+@media screen and (max-height: 300px) {
+	.hd {
+		font-size: 20vh;
+	}
+	.text {
+		font-size: 16vh;
+	}
+	.div1 {
+		gap: 8vh;
+		padding: 15vh;
+	}
+	.iconimg-div {
+		gap: 8vh;
+	}
+	.icon-span {
+		gap: 5vh;
+	}
+	.icon-span img {
+		width: 20vh;
+		height: 20vh;
+	}
+	.icon-para {
+		font-size: 16vh;
+	}
+	#emaildiv label, #error {
+		font-size: 18vh;
+	}
+	#email {
+		font-size: 18vh;
+	}
+	#btn {
+		font-size: 18vh;
+	}
 }
